@@ -1,5 +1,5 @@
 class WeekSerializer < ActiveModel::Serializer
-  attributes :id, :start_date, :end_date
+  attributes :id, :start_date, :end_date, :jobs, :gits, :blogs, :one_to_ones, :co_of_interests
   belongs_to :user
   has_many :jobs
   has_many :gits
