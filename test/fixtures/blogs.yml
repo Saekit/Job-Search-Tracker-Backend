@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2019-03-26
+  amount_completed: 1
+  url: MyString
+  week: one
+
+two:
+  date: 2019-03-26
+  amount_completed: 1
+  url: MyString
+  week: two

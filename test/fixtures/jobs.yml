@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  company: MyString
+  contact_name_title: MyString
+  date: 2019-03-26
+  action: MyString
+  method_contacted: MyString
+  first_time_contacting_co: false
+  source_referral: MyString
+  job_title: MyString
+  link_to_job_an: MyString
+  note: MyString
+  next_step: MyString
+  action_complete: false
+  status: MyString
+
+two:
+  company: MyString
+  contact_name_title: MyString
+  date: 2019-03-26
+  action: MyString
+  method_contacted: MyString
+  first_time_contacting_co: false
+  source_referral: MyString
+  job_title: MyString
+  link_to_job_an: MyString
+  note: MyString
+  next_step: MyString
+  action_complete: false
+  status: MyString
