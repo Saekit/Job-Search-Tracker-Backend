@@ -5,9 +5,18 @@ class Api::V1::UsersController < ApplicationController
     render json: @users
   end
 
+  # def profile
+  #   render json: { user: }, status: :accepted
+  # end
+
   def create
     @user = User.create(user_params)
-    render json: @user
+    if @user.valid?
+      @token = JWT.encode({ email: @user.email }, '50m3th1ng')
+      render json: @user
+    else
+      render json: { error: 'failed to create user' }, status: :not_acceptable
+    end
   end
 
   def update
@@ -20,9 +29,8 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def destroy
-    @users = User.all
     @user.destroy
-    render json: @users
+    render json: { message: 'removed' }, status: :ok
   end
 
   private
